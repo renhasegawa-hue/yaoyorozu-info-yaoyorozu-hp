@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-base-white: #FFFFFF;
+  --color-base-black: #1A1A1A;
+  --color-accent-indigo: #1A2F5A;
+  --color-accent-gold: #B8960C;
+  --color-accent-vermilion: #FF4B00;
+  --color-sub-gray: #F5F5F5;
+
+  --font-yuji: 'Yuji Syuku', serif;
+  --font-klee: 'Klee One', serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-noto-sans-jp: 'Noto Sans JP', sans-serif;
+  --font-zen-kaku: 'Zen Kaku Gothic New', sans-serif;
+
+  --shadow-sm: none;
+  --shadow: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --shadow-2xl: none;
+  --shadow-inner: none;
+}
+
+@layer base {
+
+  html,
+  body {
+    background-color: var(--color-base-white);
+    color: var(--color-base-black);
+    font-family: var(--font-noto-sans-jp);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-accent-indigo);
+    color: var(--color-base-white);
+  }
+}
+
+/* スクロールバーのカスタマイズ（静かなデザイン） */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-base-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sub-gray);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E0E0E0;
+}
+
+/* Hero Scroll Indicator Animation */
+@keyframes scrolldown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}

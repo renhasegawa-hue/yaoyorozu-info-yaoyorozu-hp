@@ -22,7 +22,7 @@ const flowSteps = [
     { id: "01", title: "現場ヒアリング", desc: "経営者・スタッフ双方へのヒアリングを通じ、業務の実態と本質的な課題を特定します。" },
     { id: "02", title: "改善策の設計", desc: "課題をもとに、収益性・実現性を踏まえた具体的な改善プランをご提案します。" },
     { id: "03", title: "試験導入", desc: "小さく試して効果を確認。現場の声を反映しながら、システムの精度と信頼性を高めます。" },
-    { id: "04", title: "導入・調整", desc: "施設の規模・フローに合わせAIを最適化。現場の文化に馴染むまで徹底的に仕上げます。" },
+    { id: "04", title: "導入・調整", desc: "旅館やホテルの規模・フローに合わせAIを最適化。現場の文化に馴染むまで徹底的に仕上げます。" },
     { id: "05", title: "定着・継続改善", desc: "導入後も現場に寄り寄り添い、状況の変化に合わせてシステムを自律的にアップデートします。" }
 ];
 
@@ -166,7 +166,7 @@ export default function ServiceOverview() {
                             </h2>
                         </BrushTextReveal>
                         <p className="font-noto-sans-jp text-[15px] md:text-[16px] leading-[2.8] tracking-[0.1em] text-base-black/80 font-light mt-0 md:mt-12 text-left w-full max-w-sm shrink-0 word-break-keep-all">
-                            ヤオヨロズは旅行者体験に関するあらゆるデータ基盤を構築し、各施設の課題に対して精度の高いAIソリューションを設計・提供します。<br /><br />
+                            ヤオヨロズは旅行者体験に関するあらゆるデータ基盤を構築し、旅館やホテル、各施設の課題に対して精度の高いAIソリューションを設計・提供します。<br /><br />
                             現場に根ざしたデータこそが、私たちの価値の源泉です。
                         </p>
                     </div>
@@ -205,7 +205,7 @@ export default function ServiceOverview() {
                 <div className="w-full mb-48 fade-up flex flex-col lg:flex-row gap-8 items-start">
                     <div className="w-full lg:w-11/12">
                         <p className="font-noto-sans-jp text-[16px] md:text-[19px] leading-[3.0] tracking-[0.12em] text-base-black/80 font-light word-break-keep-all max-w-5xl">
-                            「AIを活用したBPO（ビジネス・プロセス・アウトソーシング）サービス」を中心に、現場の定型業務をAIが肩代わりし、人が付加価値の高い業務に専念できる環境を構築します。<br /><br />
+                            「AIを活用したBPO（ビジネス・プロセス・アウトソーシング）サービス」を中心に、旅館やホテルの現場の定型業務をAIが肩代わりし、人が付加価値の高い業務に専念できる環境を構築します。<br /><br />
                             私たちは、テクノロジーを単なるツールとしてではなく、組織の在り方を根本から変革するパートナーとして提供します。
                         </p>
                     </div>

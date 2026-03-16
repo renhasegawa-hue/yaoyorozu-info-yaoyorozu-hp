@@ -158,7 +158,7 @@ export default function ServiceOverview() {
 
             <div className="max-w-7xl mx-auto relative z-20 flex flex-col items-center px-8 md:px-12">
 
-                <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-12 fade-up mb-24 md:mb-40">
+                <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-12 fade-up mb-16 md:mb-40">
                     <div className="w-full lg:w-5/12 flex flex-col md:flex-row gap-12 lg:gap-20 items-center md:items-start pt-10">
                         <BrushTextReveal direction="vertical" delay={0} scrollReset>
                             <h2 className="font-yuji text-[1.8rem] md:text-[2.2rem] lg:text-[2.5rem] tracking-[0.2em] text-base-black/90 leading-[2.5] word-break-keep-all" style={{ writingMode: 'vertical-rl' }}>

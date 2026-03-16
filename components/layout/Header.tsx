@@ -105,16 +105,19 @@ export default function Header() {
                 </button>
             </div>
 
-            {/* Mobile Nav Overlay */}
             <div className={cn(
-                "fixed inset-0 bg-base-black/95 backdrop-blur-xl z-40 transition-all duration-500 flex flex-col justify-center items-center",
+                "fixed inset-0 bg-base-black/95 backdrop-blur-xl z-40 transition-all duration-500 flex flex-col justify-center items-center overflow-y-auto px-8",
                 mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
             )}>
                 <nav className="flex flex-col items-center gap-10 font-cinzel text-xl tracking-widest text-base-white">
                     {['HOME', 'VISION', 'SERVICE', 'COMPANY', 'CONTACT'].map((item) => (
                         <Link
                             key={item}
-                            href={item === 'HOME' ? '/' : `/${item.toLowerCase()}`}
+                            href={
+                                item === 'HOME' ? '/' : 
+                                item === 'SERVICE' ? '/#service' : 
+                                `/${item.toLowerCase()}`
+                            }
                             className="relative group overflow-hidden"
                             onClick={() => setMobileMenuOpen(false)}
                         >

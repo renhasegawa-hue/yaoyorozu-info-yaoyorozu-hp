@@ -154,7 +154,7 @@ export default function CompanyPage() {
             <div className="company-section mb-48 flex flex-col items-start lg:items-center text-left lg:text-center w-full">
                 <div className="w-full max-w-5xl mx-auto">
                     <h2 className="font-yuji text-[2rem] md:text-[3.2rem] text-base-black tracking-[0.05em] leading-[1.6] mb-12 word-break-keep-all">
-                        日本の「おもてなし」を、<br />
+                        日本の「おもてなし」を、<br className="hidden sm:block" />
                         AIで再定義する。
                     </h2>
                     <p className="font-noto-sans-jp text-[16px] md:text-[18px] leading-[2.6] tracking-[0.1em] text-base-black/70 font-light word-break-keep-all max-w-3xl mx-auto">
@@ -171,7 +171,6 @@ export default function CompanyPage() {
                             { label: "会社名", value: "株式会社ヤオヨロズ (YAOYOROZU Inc.)" },
                             { label: "代表者", value: "代表取締役 松林 太一" },
                             { label: "設立年月日", value: "2026年 3月" },
-                            { label: "資本金", value: "100万円" },
                             { label: "本社", value: "〒151-0063 東京都渋谷区富ヶ谷2-26-16" },
                         ].map((item, idx) => (
                             <div key={idx} className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12 py-8 border-b border-accent-gold/10 last:border-0 word-break-keep-all">

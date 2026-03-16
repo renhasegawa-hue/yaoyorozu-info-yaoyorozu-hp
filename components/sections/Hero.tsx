@@ -121,9 +121,9 @@ export default function Hero() {
                     <BrushTextReveal direction="vertical" delay={2.0} duration={2.5} kasure scrollReset>
                         {/* Text is rendered over the strong white gradient mask for perfect legibility */}
                         <h1 className="font-yuji text-[1.8rem] sm:text-[2.2rem] md:text-[3rem] lg:text-[3.5rem] tracking-[0.2em] flex flex-row-reverse gap-6 md:gap-12 min-h-[50vh] items-start word-break-keep-all">
-                            <span style={{ writingMode: 'vertical-rl' }} className="drop-shadow-sm">おもてなしと</span>
-                            <span style={{ writingMode: 'vertical-rl' }} className="pt-[5vh] md:pt-[10vh] drop-shadow-sm">
-                                決断以外を<span style={{ textOrientation: 'upright' }} className="text-accent-gold drop-shadow-md">AI</span>で。
+                            <span style={{ writingMode: 'vertical-rl' }} className="drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)]">おもてなしと</span>
+                            <span style={{ writingMode: 'vertical-rl' }} className="pt-[5vh] md:pt-[10vh] drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)]">
+                                決断以外を<span style={{ textOrientation: 'upright' }} className="text-accent-gold drop-shadow-[0_2px_15px_rgba(184,143,12,0.4)]">AI</span>で。
                             </span>
                         </h1>
                     </BrushTextReveal>
@@ -137,7 +137,7 @@ export default function Hero() {
                         </p>
                     </BrushTextReveal>
 
-                    <div className="opacity-0" style={{ animation: 'fadeIn 1s ease-out 3.0s forwards' }}>
+                    <div className="opacity-0 mb-8 md:mb-0" style={{ animation: 'fadeIn 1s ease-out 3.0s forwards' }}>
                         <Button variant="outline" className="bg-base-white/80 backdrop-blur-sm">
                             VIEW PROJECT
                         </Button>
@@ -147,7 +147,7 @@ export default function Hero() {
 
             {/* Scroll Indicator */}
             <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-4 opacity-70">
-                <span className="font-cinzel text-xs tracking-widest text-base-black" style={{ writingMode: 'vertical-rl' }}>
+                <span className="font-cinzel text-xs tracking-widest text-base-black opacity-40" style={{ writingMode: 'vertical-rl' }}>
                     SCROLL
                 </span>
                 <div className="w-[1px] h-16 bg-base-black/20 overflow-hidden relative">

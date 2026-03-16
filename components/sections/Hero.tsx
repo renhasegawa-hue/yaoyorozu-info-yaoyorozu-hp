@@ -114,7 +114,7 @@ export default function Hero() {
             </div>
 
             {/* Main Content Area */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-12 flex flex-col md:flex-row-reverse items-center justify-center gap-16 md:gap-32 h-full pt-32 pb-48 md:py-0 hero-parallax">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-12 flex flex-col md:flex-row-reverse items-center justify-center gap-16 md:gap-32 h-full pt-44 pb-48 md:py-0 hero-parallax">
 
                 {/* Main Copy (Right side on PC, Top on Mobile) */}
                 <div className="flex justify-center flex-shrink-0 relative">

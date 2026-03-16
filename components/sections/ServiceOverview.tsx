@@ -159,7 +159,11 @@ export default function ServiceOverview() {
             <div className="max-w-7xl mx-auto relative z-20 flex flex-col items-center px-8 md:px-12">
 
                 <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-12 fade-up mb-16 md:mb-40">
-                    <div className="w-full lg:w-5/12 flex flex-col md:flex-row gap-12 lg:gap-20 items-center md:items-start pt-10">
+                    <div className="w-full lg:w-5/12 flex flex-col md:flex-row gap-12 lg:gap-20 items-center md:items-start pt-10 relative">
+                        {/* Decorative Circle for Mobile/Desktop */}
+                        <div className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 -translate-y-4 w-12 h-12 rounded-full border border-accent-gold/20 flex items-center justify-center pointer-events-none mb-8 md:mb-0">
+                            <div className="w-2 h-2 rounded-full bg-accent-gold/30"></div>
+                        </div>
                         <BrushTextReveal direction="vertical" delay={0} scrollReset>
                             <h2 className="font-yuji text-[1.8rem] md:text-[2.2rem] lg:text-[2.5rem] tracking-[0.2em] text-base-black/90 leading-[2.5] word-break-keep-all" style={{ writingMode: 'vertical-rl' }}>
                                 旅行者データを核に、<br />AIが宿を変える。

@@ -106,7 +106,7 @@ export default function Header() {
             </div>
 
             <div className={cn(
-                "fixed inset-0 bg-base-black z-50 transition-all duration-500 flex flex-col justify-center items-center overflow-y-auto px-8",
+                "fixed inset-0 h-[100dvh] w-screen bg-base-black z-[9999] transition-all duration-500 flex flex-col justify-center items-center overflow-y-auto px-8",
                 mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
             )}>
                 <nav className="flex flex-col items-center gap-10 font-cinzel text-2xl tracking-widest text-base-white">

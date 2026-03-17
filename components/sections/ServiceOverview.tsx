@@ -158,7 +158,7 @@ export default function ServiceOverview() {
 
             <div className="max-w-7xl mx-auto relative z-20 flex flex-col items-center px-8 md:px-12">
 
-                <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-12 fade-up mb-16 md:mb-40">
+                <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-24 lg:gap-12 fade-up mb-16 md:mb-40">
                     <div className="w-full lg:w-5/12 flex flex-col md:flex-row gap-12 lg:gap-20 items-center md:items-start pt-10 relative">
                         {/* Decorative Circle for Mobile/Desktop */}
                         <div className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 -translate-y-4 w-12 h-12 rounded-full border border-accent-gold/20 flex items-center justify-center pointer-events-none mb-8 md:mb-0">
@@ -202,7 +202,7 @@ export default function ServiceOverview() {
                 <div className="w-full mb-32 fade-up text-center md:text-left border-b border-accent-gold/10 pb-12 relative flex flex-col md:flex-row items-baseline justify-between gap-8">
                     <div>
                         <span className="font-cinzel text-[1.1rem] tracking-[0.5em] text-accent-gold/60 mb-6 block uppercase">01. DX Solution</span>
-                        <h3 className="font-yuji text-[2.5rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all">1. DXソリューション</h3>
+                        <h3 className="font-yuji text-[1.8rem] sm:text-[2.2rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all">1. DXソリューション</h3>
                     </div>
                 </div>
 

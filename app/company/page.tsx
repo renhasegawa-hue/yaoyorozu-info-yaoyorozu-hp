@@ -18,21 +18,21 @@ const members = [
         name: "松林 太一",
         role: "代表取締役",
         image: "/images/members/松林太一ver2.png",
-        bio: "京都大学工学部工業化学科卒。合同会社tempの代表。在学中に合同会社tempを創業し、オンライン英語塾やAIマッチングアプリを立ち上げ。法人向け生成AIカスタマイズ研修を提供。生成AIパスポートの資格制度を開発。京都光華女子大学生成AI勉強会特別講師を兼任。"
+        bio: "京都大学工学部工業化学科卒。合同会社tempの代表。在学中に合同会社tempを創業し、オンライン英語塾やAIマッチングアプリを立ち上げ。法人向け生成AIカスタマイズ研修を提供。京都光華女子大学生成AI勉強会特別講師を兼任。"
     },
     {
         id: "m2",
         name: "三浦 康平",
         role: "営業統括",
         image: "/images/members/三浦康平.jpg",
-        bio: "(株)OPTでWEBマーケティング及びツール制作、大手金融企業でマーケティング戦略担当。生成AI活用普及協会を共同創業。JHTAのデジタル人材育成専門委員会・AI利活用部会 委員長。"
+        bio: "(株)OPTでWEBマーケティング及びツール制作、大手金融企業でマーケティング戦略担当。JHTAのデジタル人材育成専門委員会・AI利活用部会 委員長。"
     },
     {
         id: "m3",
         name: "津本 海",
         role: "AI・技術責任者",
         image: "/images/members/津本海.webp",
-        bio: "東京大学大学院数理科学研究科専攻卒業。スタートアップ支援、ベンチャー企業で新規事業立ち上げを経験。株式会社スニフアウトCEOとして30社以上に生成AIを導入。生成AI活用普及協会GUGA評議員。"
+        bio: "東京大学大学院数理科学研究科専攻卒業。スタートアップ支援、ベンチャー企業で新規事業立ち上げを経験。株式会社スニフアウトCEOとして30社以上に生成AIを導入。"
     },
     {
         id: "m4",
@@ -47,13 +47,6 @@ const members = [
         role: "財務責任者",
         image: "/images/members/下遠野隼人ver2.png",
         bio: "早稲田大学政治経済卒。世界最大の資産運用会社であるブラックロックに新卒入社。ファンド組成・資金調達営業を経験。法人向け生成AI研修会社のGenUp参画後、国内企業の生成AI活用による業務効率化を推進。"
-    },
-    {
-        id: "m6",
-        name: "溝邉 大樹",
-        role: "バックオフィス責任者",
-        image: "/images/members/溝部大樹.jpeg",
-        bio: "創業メンバー、現プロダクトマネージャー。創業期よりGUGAの事務局オペレーションおよびプロダクト全体の構造設計を主導。複雑な業務を再設計し、1回あたり約25,000名規模の受講者を約5名体制で運営可能とする事務局モデルを構築。「生成AIパスポート」資格制度の企画・立ち上げ、産学官連携を前提とした教材・シラバス設計等を担う。"
     }
 ];
 
@@ -193,11 +186,11 @@ export default function CompanyPage() {
                     </div>
                 </div>
 
-                <div className="member-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24 w-full">
+                <div className="member-grid flex flex-wrap justify-center gap-x-12 gap-y-24 w-full">
                     {members.map((member, index) => (
                         <div
                             key={member.id}
-                            className="member-card flex flex-col items-center group cursor-default"
+                            className="member-card flex flex-col items-center group cursor-default w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-2rem)] max-w-[380px]"
                             onMouseEnter={() => handleMouseEnter(index)}
                             onMouseLeave={() => handleMouseLeave(index)}
                         >

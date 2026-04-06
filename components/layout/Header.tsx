@@ -62,7 +62,7 @@ export default function Header() {
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-12 font-cinzel text-sm tracking-[0.2em]">
-                    {['VISION', 'SERVICE', 'COMPANY'].map((item) => (
+                    {['NEWS', 'VISION', 'SERVICE', 'COMPANY'].map((item) => (
                         <Link
                             key={item}
                             href={item === 'SERVICE' ? '/#service' : `/${item.toLowerCase()}`}
@@ -110,7 +110,7 @@ export default function Header() {
                 mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
             )}>
                 <nav className="flex flex-col items-center gap-10 font-cinzel text-2xl tracking-widest text-base-white">
-                    {['HOME', 'VISION', 'SERVICE', 'COMPANY', 'CONTACT'].map((item) => (
+                    {['HOME', 'NEWS', 'VISION', 'SERVICE', 'COMPANY', 'CONTACT'].map((item) => (
                         <Link
                             key={item}
                             href={

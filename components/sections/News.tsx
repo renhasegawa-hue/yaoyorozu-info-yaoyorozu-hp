@@ -11,22 +11,7 @@ if (typeof window !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger, useGSAP);
 }
 
-const newsData = [
-    {
-        id: 1,
-        date: "2026.03.05",
-        category: "お知らせ",
-        title: "株式会社ヤオヨロズが設立されました。",
-        link: "#"
-    },
-    {
-        id: 2,
-        date: "2026.01",
-        category: "プレスリリース",
-        title: "弊社三浦の取り組みが観光庁の「観光DX事業」に採択されました。",
-        link: "#"
-    }
-];
+import { newsData } from '@/lib/news';
 
 export default function News() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -105,7 +90,7 @@ export default function News() {
                 <div className="md:w-3/4 flex-grow flex flex-col pt-4">
                     {newsData.map((item) => (
                         <Link
-                            href={item.link}
+                            href={`/news/${item.id}`}
                             key={item.id}
                             className="news-item group block border-b border-accent-gold/10 py-10 md:py-12 hover:bg-base-black/[0.01] transition-all duration-700 relative"
                         >

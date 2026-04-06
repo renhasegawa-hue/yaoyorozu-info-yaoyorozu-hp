@@ -1,6 +1,7 @@
 import { newsData } from "@/lib/news";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 export default async function NewsDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -25,7 +26,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
         </div>
 
         {/* Content Header */}
-        <header className="mb-20 md:mb-32">
+        <header className="mb-20 md:mb-24">
           <div className="flex items-center gap-6 mb-12">
             <span className="font-cinzel text-sm md:text-base tracking-widest text-base-black/40 font-medium whitespace-nowrap">
               {news.date}
@@ -34,20 +35,60 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
               {news.category}
             </span>
           </div>
-          <h1 className="font-noto-sans-jp text-3xl md:text-4xl tracking-wide leading-[1.6] text-base-black font-light">
+          <h1 className="font-noto-sans-jp text-3xl md:text-4xl tracking-wide leading-[1.5] text-base-black font-medium mb-8">
             {news.title}
           </h1>
+          {news.subtitle && (
+            <p className="font-noto-sans-jp text-lg md:text-xl text-base-black/60 tracking-wider leading-relaxed font-light">
+              {news.subtitle}
+            </p>
+          )}
           <div className="w-16 h-[1.5px] bg-accent-gold mt-16 opacity-40"></div>
         </header>
 
-        {/* Content Body Placeholder */}
-        <div className="prose prose-lg max-w-none font-noto-sans-jp text-base-black/70 leading-relaxed font-light tracking-wide">
-          <p className="mb-8">
-            本文は現在準備中です。弊社の最新の取り組みにつきましては、順次詳細を公開してまいります。
-          </p>
-          <div className="h-40 md:h-64 bg-sub-gray/5 border border-base-black/5 rounded-sm flex items-center justify-center italic text-base-black/20 text-sm">
-            Content Placeholder
-          </div>
+        {/* Content Body */}
+        <div className="space-y-12 md:space-y-20">
+          {news.sections ? (
+            news.sections.map((section, index) => {
+              switch (section.type) {
+                case "paragraph":
+                  return (
+                    <p key={index} className="font-noto-sans-jp text-base md:text-lg text-base-black/80 leading-[1.8] font-light tracking-wide">
+                      {section.content}
+                    </p>
+                  );
+                case "heading":
+                  return (
+                    <h3 key={index} className="font-noto-sans-jp text-xl md:text-2xl text-base-black tracking-widest leading-tight pt-8 border-l-2 border-accent-gold pl-6 font-medium">
+                      {section.content}
+                    </h3>
+                  );
+                case "image":
+                  return (
+                    <div key={index} className="relative w-full aspect-[16/9] overflow-hidden rounded-sm bg-sub-gray/10 group">
+                      <Image
+                        src={section.src || ""}
+                        alt={section.alt || ""}
+                        fill
+                        className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                        priority={index === 0}
+                      />
+                    </div>
+                  );
+                default:
+                  return null;
+              }
+            })
+          ) : (
+            <div className="prose prose-lg max-w-none font-noto-sans-jp text-base-black/70 leading-relaxed font-light tracking-wide">
+              <p className="mb-8">
+                本文は現在準備中です。弊社の最新の取り組みにつきましては、順次詳細を公開してまいります。
+              </p>
+              <div className="h-40 md:h-64 bg-sub-gray/5 border border-base-black/5 rounded-sm flex items-center justify-center italic text-base-black/20 text-sm">
+                Content Placeholder
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Navigation */}

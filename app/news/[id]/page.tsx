@@ -76,9 +76,9 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
                         </p>
                       )}
                       {index === 0 && news.subtitle && (
-                        <p className="font-noto-sans-jp text-lg md:text-xl text-base-black/60 tracking-wider leading-relaxed font-light pt-4 md:pt-8 border-t border-accent-gold/5">
+                        <h2 className="font-noto-sans-jp text-xl md:text-2xl text-base-black tracking-widest leading-tight pt-12 md:pt-20 border-l-2 border-accent-gold pl-6 font-medium">
                           {news.subtitle}
-                        </p>
+                        </h2>
                       )}
                     </div>
                   );

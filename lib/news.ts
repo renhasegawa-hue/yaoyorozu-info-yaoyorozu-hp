@@ -3,6 +3,7 @@ export interface NewsSection {
   content?: string;
   src?: string;
   alt?: string;
+  caption?: string;
 }
 
 export interface NewsItem {
@@ -25,7 +26,8 @@ export const newsData: NewsItem[] = [
       {
         type: 'image',
         src: '/images/news/nishimuraya-1.jpg',
-        alt: '西村屋での実地研修の様子 1'
+        alt: '西村屋での実地研修の様子 1',
+        caption: '一番右が7代目 西村総一郎社長'
       },
       {
         type: 'paragraph',
@@ -74,7 +76,8 @@ export const newsData: NewsItem[] = [
       {
         type: 'image',
         src: '/images/news/nishimuraya-2.jpg',
-        alt: '西村屋での実地研修の様子 2'
+        alt: '西村屋での実地研修の様子 2',
+        caption: '右から3番目が西村屋の柳本部長'
       },
       {
         type: 'heading',

@@ -35,15 +35,10 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
               {news.category}
             </span>
           </div>
-          <h1 className="font-noto-sans-jp text-3xl md:text-4xl tracking-wide leading-[1.5] text-base-black font-medium mb-8">
+          <h1 className="font-noto-sans-jp text-3xl md:text-4xl tracking-wide leading-[1.5] text-base-black font-medium">
             {news.title}
           </h1>
-          {news.subtitle && (
-            <p className="font-noto-sans-jp text-lg md:text-xl text-base-black/60 tracking-wider leading-relaxed font-light">
-              {news.subtitle}
-            </p>
-          )}
-          <div className="w-16 h-[1.5px] bg-accent-gold mt-16 opacity-40"></div>
+          <div className="w-16 h-[1.5px] bg-accent-gold mt-12 md:mt-16 opacity-40"></div>
         </header>
 
         {/* Content Body */}
@@ -65,14 +60,26 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
                   );
                 case "image":
                   return (
-                    <div key={index} className="relative w-full aspect-[16/9] overflow-hidden rounded-sm bg-sub-gray/10 group">
-                      <Image
-                        src={section.src || ""}
-                        alt={section.alt || ""}
-                        fill
-                        className="object-cover transition-transform duration-1000 group-hover:scale-105"
-                        priority={index === 0}
-                      />
+                    <div key={index} className="space-y-6 md:space-y-8">
+                      <div className="relative w-full aspect-[16/9] overflow-hidden rounded-sm bg-sub-gray/10 group">
+                        <Image
+                          src={section.src || ""}
+                          alt={section.alt || ""}
+                          fill
+                          className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                          priority={index === 0}
+                        />
+                      </div>
+                      {section.caption && (
+                        <p className="text-[13px] md:text-sm text-base-black/40 font-noto-sans-jp tracking-wider text-right md:text-left">
+                          {section.caption}
+                        </p>
+                      )}
+                      {index === 0 && news.subtitle && (
+                        <p className="font-noto-sans-jp text-lg md:text-xl text-base-black/60 tracking-wider leading-relaxed font-light pt-4 md:pt-8 border-t border-accent-gold/5">
+                          {news.subtitle}
+                        </p>
+                      )}
                     </div>
                   );
                 default:

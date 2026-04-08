@@ -29,24 +29,24 @@ const members = [
     },
     {
         id: "m3",
-        name: "津本 海",
-        role: "AI・技術責任者",
-        image: "/images/members/津本海.webp",
-        bio: "東京大学大学院数理科学研究科専攻卒業。スタートアップ支援、ベンチャー企業で新規事業立ち上げを経験。株式会社スニフアウトCEOとして30社以上に生成AIを導入。"
-    },
-    {
-        id: "m4",
         name: "中村 真也",
         role: "事業開発責任者",
         image: "/images/members/中村真也ver2.png",
         bio: "京都大学法学部卒。新卒で外資系コンサルファームに入社し、その後国内系コンサルファームにて、官公庁向けの戦略コンサルティングに従事。合同会社tempへCOOとして参画。生成AIを利用したペットイラストサービス「Pet is your...」をリリース。"
     },
     {
+        id: "m4",
+        name: "津本 海",
+        role: "AI・技術責任者",
+        image: "/images/members/津本海.webp",
+        bio: "東京大学大学院数理科学研究科専攻卒業。スタートアップ支援、ベンチャー企業で新規事業立ち上げを経験。株式会社スニフアウトCEOとして30社以上に生成AIを導入。"
+    },
+    {
         id: "m5",
-        name: "下遠野 隼人",
-        role: "財務責任者",
-        image: "/images/members/下遠野隼人ver2.png",
-        bio: "早稲田大学政治経済卒。世界最大の資産運用会社であるブラックロックに新卒入社。ファンド組成・資金調達営業を経験。法人向け生成AI研修会社のGenUp参画後、国内企業の生成AI活用による業務効率化を推進。"
+        name: "迫 裕太",
+        role: "CPO",
+        image: "/images/members/迫裕太.jpg",
+        bio: "京都大学総合人間学部卒。株式会社LITALICOにて最年少部長として、教育・人材・医療・福祉等の複数プロダクト責任者を歴任。その後、株式会社ASPIAの事業責任者を務める。"
     }
 ];
 
@@ -164,7 +164,7 @@ export default function CompanyPage() {
                             { label: "会社名", value: "株式会社ヤオヨロズ (YAOYOROZU Inc.)" },
                             { label: "代表者", value: "代表取締役 松林 太一" },
                             { label: "設立年月日", value: "2026年 3月" },
-                            { label: "本社", value: "〒151-0063 東京都渋谷区富ヶ谷2-26-16" },
+                            { label: "本社", value: "〒151-0063 東京都渋谷区富ヶ谷2-26-16-202" },
                         ].map((item, idx) => (
                             <div key={idx} className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12 py-8 border-b border-accent-gold/10 last:border-0 word-break-keep-all">
                                 <dt className="w-full md:w-1/4 font-medium text-accent-gold tracking-[0.2em]">{item.label}</dt>

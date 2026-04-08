@@ -222,7 +222,7 @@ export default function CompanyPage() {
                                     {member.name}
                                 </h3>
                                 <div className="w-10 h-[1px] bg-accent-gold/30 mb-8 transition-all duration-700 group-hover:w-20 group-hover:bg-accent-gold"></div>
-                                <p className="font-noto-sans-jp text-[14px] md:text-[15px] leading-[2.2] tracking-[0.1em] text-base-black/60 font-light text-left md:text-justify line-clamp-6 group-hover:line-clamp-none transition-all duration-700 word-break-keep-all">
+                                <p className="font-noto-sans-jp text-[14px] md:text-[15px] leading-[2.2] tracking-[0.1em] text-base-black/60 font-light text-left md:text-justify line-clamp-6 group-hover:line-clamp-none transition-all duration-700">
                                     {member.bio}
                                 </p>
                             </div>

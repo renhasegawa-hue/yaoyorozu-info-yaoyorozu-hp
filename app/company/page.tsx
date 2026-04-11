@@ -148,7 +148,7 @@ export default function CompanyPage() {
                 <div className="w-full max-w-5xl mx-auto">
                     <h2 className="font-yuji text-[2rem] md:text-[3.2rem] text-base-black tracking-[0.05em] leading-[1.6] mb-12 word-break-keep-all">
                         日本の「おもてなし」を、<br className="hidden sm:block" />
-                        AIで再定義する。
+                        AIでより良く。
                     </h2>
                     <p className="font-noto-sans-jp text-[16px] md:text-[18px] leading-[2.6] tracking-[0.1em] text-base-black/70 font-light word-break-keep-all max-w-3xl mx-auto">
                         私たちは、最高峰の伝統と最先端の知性を融合させ、宿泊業界の新たなスタンダードを築きます。

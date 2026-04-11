@@ -104,7 +104,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
             <div className="relative w-10 h-[1px] bg-current overflow-hidden">
                <div className="absolute inset-0 bg-accent-gold translate-x-[101%] group-hover:translate-x-0 transition-transform duration-700"></div>
             </div>
-            <span className="font-cinzel text-[11px] tracking-[0.4em] uppercase">Return to News Room</span>
+            <span className="font-cinzel text-[11px] tracking-[0.4em] uppercase">お知らせ一覧へ戻る</span>
           </Link>
         </div>
       </article>

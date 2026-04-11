@@ -133,7 +133,7 @@ export default function Hero() {
                 <div className="flex flex-col items-center md:items-start md:mt-auto md:mb-32 gap-12 mt-16 md:mt-0 relative z-10">
                     <BrushTextReveal direction="horizontal" delay={2.5} duration={1.5} kasure scrollReset>
                         <p className="font-klee text-lg md:text-2xl tracking-[0.25em] text-base-black/90 font-semibold drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] word-break-keep-all">
-                            宿泊業界をAIで再定義する。
+                            旅館・ホテルの現場を、AIでより良く。
                         </p>
                     </BrushTextReveal>
 

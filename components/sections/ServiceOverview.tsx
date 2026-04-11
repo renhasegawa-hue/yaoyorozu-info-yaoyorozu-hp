@@ -30,7 +30,7 @@ const saasProducts = [
     {
         id: "a",
         title: "忘れ物管理DX",
-        desc: "日々発生する膨大な忘れ物をAI画像認識で自動登録。BPOと連携し、フロントの心理的・物理的負担を劇的に削減します。",
+        desc: "日々発生する膨大な忘れ物をAI画像認識で自動登録。現場の業務代行・事務サポートと連携し、フロントの心理的・物理的負担を劇的に削減します。",
         image: "/images/services/image_forgotten.png"
     },
     {
@@ -170,7 +170,7 @@ export default function ServiceOverview() {
                             </h2>
                         </BrushTextReveal>
                         <p className="font-noto-sans-jp text-[15px] md:text-[16px] leading-[2.8] tracking-[0.1em] text-base-black/80 font-light mt-0 md:mt-12 text-left w-full max-w-sm shrink-0 word-break-keep-all">
-                            ヤオヨロズは旅行者体験に関するあらゆるデータ基盤を構築し、旅館やホテル、各施設の課題に対して精度の高いAIソリューションを設計・提供します。<br /><br />
+                            ヤオヨロズは旅行者体験に関するあらゆるデータ基盤を構築し、旅館やホテル、各施設の課題に対して精度の高い解決策・具体的な仕組みを設計・提供します。<br /><br />
                             現場に根ざしたデータこそが、私たちの価値の源泉です。
                         </p>
                     </div>
@@ -182,7 +182,7 @@ export default function ServiceOverview() {
                                     <span className="font-cinzel text-[14px] md:text-[18px] tracking-[0.4em] mb-3 font-bold">YAOYOROZU</span>
                                     <div className="h-[1px] w-12 bg-white/20 mb-4"></div>
                                     <span className="font-klee text-[18px] md:text-[24px] tracking-[0.3em] leading-relaxed font-medium mb-2">コアデータ</span>
-                                    <span className="font-noto-sans-jp text-[10px] md:text-[12px] tracking-[0.2em] font-light opacity-90 leading-relaxed max-w-[80%]">多様な旅行者インサイト</span>
+                                    <span className="font-noto-sans-jp text-[10px] md:text-[12px] tracking-[0.2em] font-light opacity-90 leading-relaxed max-w-[80%]">現場の課題やデータから得られる「多様な気づき」</span>
                                 </div>
                                 {dataElements.map((item, idx) => {
                                     const angle = (idx / dataElements.length) * 2 * Math.PI - Math.PI / 2;
@@ -201,16 +201,16 @@ export default function ServiceOverview() {
 
                 <div className="w-full mb-32 fade-up text-center md:text-left border-b border-accent-gold/10 pb-12 relative flex flex-col md:flex-row items-baseline justify-between gap-8">
                     <div>
-                        <span className="font-cinzel text-[1.1rem] tracking-[0.5em] text-accent-gold/60 mb-6 block uppercase">01. DX Solution</span>
-                        <h3 className="font-yuji text-[1.8rem] sm:text-[2.2rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all">1. DXソリューション</h3>
+                        <span className="font-cinzel text-[1.1rem] tracking-[0.5em] text-accent-gold/60 mb-6 block uppercase">01. Service Improvement</span>
+                        <h3 className="font-yuji text-[1.8rem] sm:text-[2.2rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all">1. 現場の業務改善</h3>
                     </div>
                 </div>
 
                 <div className="w-full mb-48 fade-up flex flex-col lg:flex-row gap-8 items-start">
                     <div className="w-full lg:w-11/12">
                         <p className="font-noto-sans-jp text-[16px] md:text-[19px] leading-[3.0] tracking-[0.12em] text-base-black/80 font-light word-break-keep-all max-w-5xl">
-                            「AIを活用したBPO（ビジネス・プロセス・アウトソーシング）サービス」を中心に、旅館やホテルの現場の定型業務をAIが肩代わりし、人が付加価値の高い業務に専念できる環境を構築します。<br /><br />
-                            私たちは、テクノロジーを単なるツールとしてではなく、組織の在り方を根本から変革するパートナーとして提供します。
+                            「AIを活用した、現場の業務代行・事務サポート」を中心に、旅館やホテルの現場の事務作業などをAIが肩代わりし、スタッフの負担を減らし、接客に集中できる環境作りを進めます。<br /><br />
+                            私たちは、テクノロジーを単なるツールとしてではなく、これまでの働き方を根本から変えていくパートナーとして提供します。
                         </p>
                     </div>
                     <div className="w-full lg:w-1/12 flex flex-col justify-center h-full self-stretch">
@@ -243,8 +243,8 @@ export default function ServiceOverview() {
 
                 <div className="w-full mb-24 fade-up text-center md:text-left border-b border-accent-gold/10 pb-12 relative flex flex-col md:flex-row items-baseline justify-between gap-8">
                     <div>
-                        <span className="font-cinzel text-[1.1rem] tracking-[0.5em] text-accent-gold/60 mb-6 block uppercase">AI SaaS Business</span>
-                        <h3 className="font-yuji text-[2.5rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all">AI SaaS 事業</h3>
+                        <span className="font-cinzel text-[1.1rem] tracking-[0.5em] text-accent-gold/60 mb-6 block uppercase">AI System Development</span>
+                        <h3 className="font-yuji text-[2.5rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all">宿泊業専用のAIシステム開発</h3>
                     </div>
                 </div>
 

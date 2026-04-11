@@ -125,7 +125,7 @@ export default function News() {
 
                     <div className="mt-20 flex justify-end">
                         <Link href="/news" className="group flex items-center gap-6 text-base-black/40 hover:text-accent-gold transition-all duration-500">
-                            <span className="font-cinzel text-[13px] tracking-[0.4em] uppercase">View All Insights</span>
+                            <span className="font-cinzel text-[13px] tracking-[0.4em] uppercase">お知らせ一覧へ</span>
                             <div className="relative w-12 h-[1px] bg-current overflow-hidden">
                                 <div className="absolute inset-0 bg-accent-gold translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-700"></div>
                             </div>

@@ -70,7 +70,7 @@ export default function VisionPage() {
                             日本の宿泊業界が培ってきた「おもてなし」は、世界に誇るべき文化です。<br />
                             <br />
                             ヤオヨロズは、その文化を守り育てるため、<br className="hidden md:block" />
-                            最先端のテクノロジーと人の力を融合させたBPOサービスを提供します。<br />
+                            最先端のテクノロジーと人の力を融合させた現場の業務代行・事務サポートを提供します。<br />
                             ホテルや旅館のスタッフが、本来の「人対人」のサービスに全力を注げるよう、<br className="hidden md:block" />
                             あらゆる後方業務をAIの力で支え、不要な重荷を解き放ちます。
                         </p>
@@ -97,18 +97,18 @@ export default function VisionPage() {
                         <div className="flex flex-col gap-6 bg-base-white p-12 shadow-sm relative group overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-[1px] bg-base-black/10 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out"></div>
                             <span className="font-cinzel text-sm tracking-widest text-base-black/40">PHASE 01</span>
-                            <h4 className="font-noto-sans-jp font-medium text-xl tracking-wider">ホワイトカラー業務のAI化</h4>
+                            <h4 className="font-noto-sans-jp font-medium text-xl tracking-wider">バックオフィス業務のAI化</h4>
                             <p className="font-noto-sans-jp text-sm md:text-base leading-loose tracking-widest text-base-black/70 font-light">
-                                予約管理、問い合わせ対応、レベニューマネジメント、発注業務。これまで多大な時間を割かれていたバックオフィス業務を、独自のAIシステムと専門BPOチームによって完全に切り離します。
+                                予約管理、問い合わせ対応、レベニューマネジメント、発注業務。これまで多大な時間を割かれていた事務作業などの裏方業務を、独自のAIシステムと専門の現場サポートチームによって完全に切り離します。
                             </p>
                         </div>
 
                         <div className="flex flex-col gap-6 bg-base-white p-12 shadow-sm relative group overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-[1px] bg-base-black/10 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out"></div>
                             <span className="font-cinzel text-sm tracking-widest text-base-black/40">PHASE 02</span>
-                            <h4 className="font-noto-sans-jp font-medium text-xl tracking-wider">ブルーカラー業務のAI化</h4>
+                            <h4 className="font-noto-sans-jp font-medium text-xl tracking-wider">接客・清掃などの現場業務のAI化</h4>
                             <p className="font-noto-sans-jp text-sm md:text-base leading-loose tracking-widest text-base-black/70 font-light">
-                                清掃管理、在庫管理、施設メンテナンス手配。現場のフィジカルな業務においても、画像認識AIやIoTデバイスを駆使し、自動化・省力化を推進する仕組みを構築します。
+                                清掃管理、在庫管理、施設メンテナンス手配。お客様と向き合う接客の現場、おもてなしの最前線の業務においても、画像認識AIやIoTデバイスを駆使し、自動化・省力化を推進する仕組みを構築します。
                             </p>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ export default function VisionPage() {
 
                         <div className="max-w-2xl text-center fade-in-element">
                             <p className="font-noto-sans-jp text-base md:text-lg tracking-widest leading-[2.5] text-base-black/80 font-light">
-                                私たちが見据える未来は、単なる業務代行の枠を超えます。<br />
+                                私たちが見据える未来は、単なるサポートの枠を超えます。<br />
                                 日本中の宿泊施設が、ヤオヨロズのプラットフォーム（OS）の上で稼働し、<br className="hidden md:block" />
                                 データとAIの力で業界全体の生産性が飛躍的に向上する世界。<br />
                                 <br />

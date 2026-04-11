@@ -6,8 +6,8 @@ import WashiTexture from "@/components/graphics/WashiTexture";
 import MouseRipple from "@/components/animations/MouseRipple";
 
 export const metadata: Metadata = {
-  title: "株式会社ヤオヨロズ | 旅館・ホテル業界をAIで再定義するDXソリューション",
-  description: "「おもてなしと決断以外をAIで。」株式会社ヤオヨロズは、旅館やホテルに向けて、最新のAIを活用した業務効率化（DX）やBPOサービスを提供する伴走型パートナーです。忘れ物管理やAIプランナーで現場の負担を劇的に削減します。",
+  title: "株式会社ヤオヨロズ | 旅館・ホテルの現場をAIで支え、おもてなしを次のステージへ",
+  description: "「おもてなしと決断以外をAIで。」株式会社ヤオヨロズは、旅館やホテルに向けて、最新のAIを活用した現場の改善や業務代行・事務サポートを提供する伴走型パートナーです。忘れ物管理やAIシステムでスタッフの負担を減らし、接客に集中できる環境作りを劇的に進めます。",
 };
 
 export default function RootLayout({

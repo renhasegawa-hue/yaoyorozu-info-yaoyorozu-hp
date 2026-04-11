@@ -202,7 +202,10 @@ export default function ServiceOverview() {
                 <div className="w-full mb-32 fade-up text-center md:text-left border-b border-accent-gold/10 pb-12 relative flex flex-col md:flex-row items-baseline justify-between gap-8">
                     <div>
                         <span className="font-cinzel text-[1.1rem] tracking-[0.5em] text-accent-gold/60 mb-6 block uppercase">01. Service Improvement</span>
-                        <h3 className="font-yuji text-[1.8rem] sm:text-[2.2rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all">1. 現場の業務改善</h3>
+                        <h3 className="font-yuji text-[1.8rem] sm:text-[2.2rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all flex flex-wrap items-baseline">
+                            1. DXソリューション
+                            <span className="text-[0.5em] md:text-[0.45em] ml-4 font-noto-sans-jp font-light opacity-70">（現場の業務改善）</span>
+                        </h3>
                     </div>
                 </div>
 
@@ -244,7 +247,10 @@ export default function ServiceOverview() {
                 <div className="w-full mb-24 fade-up text-center md:text-left border-b border-accent-gold/10 pb-12 relative flex flex-col md:flex-row items-baseline justify-between gap-8">
                     <div>
                         <span className="font-cinzel text-[1.1rem] tracking-[0.5em] text-accent-gold/60 mb-6 block uppercase">AI System Development</span>
-                        <h3 className="font-yuji text-[2.5rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all">宿泊業専用のAIシステム開発</h3>
+                        <h3 className="font-yuji text-[2.5rem] md:text-[3.5rem] text-base-black tracking-[0.05em] leading-[1.3] word-break-keep-all flex flex-wrap items-baseline">
+                            AI SaaS事業
+                            <span className="text-[0.45em] md:text-[0.4em] ml-4 font-noto-sans-jp font-light opacity-70">（宿泊業専用のAIシステム開発）</span>
+                        </h3>
                     </div>
                 </div>
 

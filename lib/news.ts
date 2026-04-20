@@ -12,6 +12,10 @@ export interface NewsItem {
   category: string;
   title: string;
   subtitle?: string;
+  externalLink?: {
+    url: string;
+    text: string;
+  };
   sections?: NewsSection[];
 }
 
@@ -90,6 +94,38 @@ export const newsData: NewsItem[] = [
       {
         type: 'paragraph',
         content: `今回は西村屋様の多大なるご協力のもと、現場のリアルな空気や業務の機微に触れる大変貴重な機会をいただきました。株式会社ヤオヨロズは、今回の研修で得た現場の視点を活かし、旅館が守り抜いてきた伝統と誇りに寄り添いながら、これから旅館業におけるAXの最適な形を深く探ってまいります。`
+      }
+    ]
+  },
+  {
+    id: "20260327-prtimes-establishment",
+    date: "2026/03/27",
+    category: "プレスリリース",
+    title: "「おもてなし」と「決断」以外をAIで。宿泊業界特化型のAI・DXソリューションを提供する『株式会社ヤオヨロズ』設立",
+    externalLink: {
+      url: "https://prtimes.jp/main/html/rd/p/000000003.000179888.html",
+      text: "記事の全文はPR TIMESをご覧ください"
+    },
+    sections: [
+      {
+        type: 'paragraph',
+        content: `株式会社ヤオヨロズ、2026年3月5日（木）に設立。〜現場主義のAI-BPOサービスで、旅館・ホテルの人手不足解消と業務効率化を伴走支援〜`
+      },
+      {
+        type: 'heading',
+        content: `本件のポイント`
+      },
+      {
+        type: 'paragraph',
+        content: `・宿泊施設向けのAIソリューションおよびAI-BPOサービスの提供を本格開始。`
+      },
+      {
+        type: 'paragraph',
+        content: `・テクノロジーと現場主義を融合させ、本来の「おもてなし」に集中できる環境づくりを支援。`
+      },
+      {
+        type: 'paragraph',
+        content: `・各分野の専門家が集結した強力なチーム体制で事業を推進。`
       }
     ]
   },

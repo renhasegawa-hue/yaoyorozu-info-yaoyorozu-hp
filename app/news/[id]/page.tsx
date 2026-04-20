@@ -98,6 +98,24 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
           )}
         </div>
 
+        {/* External Link */}
+        {news.externalLink && (
+          <div className="mt-20 md:mt-32 flex flex-col items-center">
+            <a
+              href={news.externalLink.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative px-10 py-5 bg-base-black text-base-white font-noto-sans-jp text-[13px] tracking-[0.3em] overflow-hidden transition-all duration-700 hover:tracking-[0.4em] text-center"
+            >
+              <span className="relative z-10">{news.externalLink.text}</span>
+              <div className="absolute inset-0 bg-accent-gold translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]"></div>
+            </a>
+            <p className="mt-6 text-[10px] text-base-black/40 font-noto-sans-jp tracking-widest uppercase">
+              ※PR TIMESのサイトへ移動します
+            </p>
+          </div>
+        )}
+
         {/* Navigation */}
         <div className="mt-32 pt-16 border-t border-accent-gold/10 flex justify-between items-center">
           <Link href="/news" className="group flex items-center gap-4 text-base-black/40 hover:text-accent-gold transition-all duration-500">
